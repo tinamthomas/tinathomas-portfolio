@@ -1,4 +1,8 @@
 fileignoreconfig:
 - filename: package-lock.json
-  checksum: 9de9ce26559e1b2bf01e4a29a7484c081d240184894dfe0f8001135347c0e0e6
+  checksum: ac6a366200267ad37aa654125bef27927dad0ab4c99ff83624965800f012f221
+- filename: app/routes/home.tsx
+  checksum: 1fe8d909b2a0b75e6df16b9c991995a56250fa00dbc3d30abfaf1848c7b8fdfc
+- filename: app/components/homepage.tsx
+  checksum: d247ed3e368e5ede6ab6c5216c0e35494e1c03ea2d1e7737c168362c093b902e
 version: "1.0"
