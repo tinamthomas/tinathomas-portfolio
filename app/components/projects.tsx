@@ -19,17 +19,17 @@ export function Projects() {
         },
     ];
     return (
-        <Box sx={{ bgcolor: 'grey.50', py: 8 }}>
+        <Box sx={{ py: 4 }}>
         <Container maxWidth="lg">
           <Typography variant="h3" component="h2" gutterBottom sx={{ textAlign: 'center', fontWeight: 'bold', mb: 6 }}>
             Featured Projects
           </Typography>
           <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 4, flexWrap: 'wrap' }}>
             {projects.map((project, index) => (
-              <Box key={index} sx={{ flex: { xs: '1', md: '1 1 calc(33.333% - 16px)' }, minWidth: { md: '300px' } }}>
+              <Box key={index} sx={{ display: 'flex', flexDirection: 'column', gap: 4, width: '100%' }}>
                 <Card elevation={3} sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography variant="h5" component="h3" gutterBottom sx={{ fontWeight: 'bold' }}>
+                    <Typography variant="h5" component="h3" gutterBottom sx={{ fontWeight: 'bold', color: 'primary.main' }}>
                       {project.title}
                     </Typography>
                     <Typography variant="body2" color="text.secondary" paragraph>

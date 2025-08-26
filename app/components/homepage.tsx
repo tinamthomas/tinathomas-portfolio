@@ -135,15 +135,9 @@ export function HomePage() {
         <About />
       </Container>
 
-      {/* Projects Section */}
-      <Container maxWidth="lg" sx={{ py: 8 }}>
-        <Projects />
-      </Container>
+      <Experience />
+      <Projects />
 
-      {/* Experience Section */}
-      <Container maxWidth="lg" sx={{ py: 8 }}>
-        <Experience />
-      </Container>
 
       {/* Contact Section */}
       <Box sx={{ bgcolor: 'primary.main', color: 'white', py: 8 }}>

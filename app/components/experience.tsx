@@ -17,7 +17,7 @@ const experiences = [
 
 export function Experience() {
     return (
-        < Container maxWidth="lg" sx={{ py: 8 }}>
+        < Container maxWidth="lg" sx={{ py: 4 }}>
             <Typography variant="h3" component="h2" gutterBottom sx={{ textAlign: 'center', fontWeight: 'bold', mb: 6 }}>
                 Experience
             </Typography>
