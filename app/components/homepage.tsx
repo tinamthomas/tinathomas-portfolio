@@ -17,6 +17,8 @@ import {
   Work,
 } from '@mui/icons-material';
 import { About } from './about';
+import { Experience } from './experience';
+import { Projects } from './projects';
 
 export function HomePage() {
 
@@ -119,6 +121,7 @@ export function HomePage() {
                   borderColor: 'white',
                   bgcolor: 'primary.main'
                 }}
+                src="/public/Tina.jpg"
               >
                 <Typography variant="h1">TT</Typography>
               </Avatar>
@@ -133,80 +136,13 @@ export function HomePage() {
       </Container>
 
       {/* Projects Section */}
-      <Box sx={{ bgcolor: 'grey.50', py: 8 }}>
-        <Container maxWidth="lg">
-          <Typography variant="h3" component="h2" gutterBottom sx={{ textAlign: 'center', fontWeight: 'bold', mb: 6 }}>
-            Featured Projects
-          </Typography>
-          <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 4, flexWrap: 'wrap' }}>
-            {projects.map((project, index) => (
-              <Box key={index} sx={{ flex: { xs: '1', md: '1 1 calc(33.333% - 16px)' }, minWidth: { md: '300px' } }}>
-                <Card elevation={3} sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography variant="h5" component="h3" gutterBottom sx={{ fontWeight: 'bold' }}>
-                      {project.title}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary" paragraph>
-                      {project.description}
-                    </Typography>
-                    <Box sx={{ mb: 2 }}>
-                      {project.tech.map((tech) => (
-                        <Chip
-                          key={tech}
-                          label={tech}
-                          size="small"
-                          variant="outlined"
-                          sx={{ mr: 0.5, mb: 0.5 }}
-                        />
-                      ))}
-                    </Box>
-                    <Stack direction="row" spacing={1}>
-                      <Button size="small" startIcon={<GitHub />} href={project.github} target="_blank">
-                        Code
-                      </Button>
-                      <Button size="small" startIcon={<Code />} href={project.live} target="_blank">
-                        Live Demo
-                      </Button>
-                    </Stack>
-                  </CardContent>
-                </Card>
-              </Box>
-            ))}
-          </Box>
-        </Container>
-      </Box>
+      <Container maxWidth="lg" sx={{ py: 8 }}>
+        <Projects />
+      </Container>
 
       {/* Experience Section */}
       <Container maxWidth="lg" sx={{ py: 8 }}>
-        <Typography variant="h3" component="h2" gutterBottom sx={{ textAlign: 'center', fontWeight: 'bold', mb: 6 }}>
-          Experience
-        </Typography>
-        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-          {experiences.map((exp, index) => (
-            <Box key={index}>
-              <Paper elevation={2} sx={{ p: 4 }}>
-                <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 3, alignItems: { md: 'center' } }}>
-                  <Box sx={{ flex: { xs: '1', md: '1' } }}>
-                    <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'primary.main' }}>
-                      {exp.role}
-                    </Typography>
-                    <Typography variant="subtitle1" color="text.secondary">
-                      {exp.company}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      {exp.period}
-                    </Typography>
-                  </Box>
-                  <Box sx={{ flex: { xs: '1', md: '3' } }}>
-                    <Typography variant="body1">
-                      {exp.description}
-                    </Typography>
-                  </Box>
-                </Box>
-              </Paper>
-            </Box>
-          ))}
-        </Box>
+        <Experience />
       </Container>
 
       {/* Contact Section */}

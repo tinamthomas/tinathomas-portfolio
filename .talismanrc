@@ -5,4 +5,8 @@ fileignoreconfig:
   checksum: 1fe8d909b2a0b75e6df16b9c991995a56250fa00dbc3d30abfaf1848c7b8fdfc
 - filename: app/components/homepage.tsx
   checksum: d247ed3e368e5ede6ab6c5216c0e35494e1c03ea2d1e7737c168362c093b902e
+- filename: app/components/experience.tsx
+  checksum: b905e9fc6f926a317467d280c2a8103466efbe9858bf8843c5b5c1a5cef0c403
+- filename: app/components/projects.tsx
+  checksum: 0f16c49735eb09a2ed51ea3ab63fa5525e921779a5e6f871e9be4af3a5499ec2
 version: "1.0"
