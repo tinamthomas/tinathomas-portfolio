@@ -8,33 +8,17 @@ import {
   Chip,
   Avatar,
   Stack,
-  IconButton,
-  Divider,
   Paper,
-  useTheme,
-  useMediaQuery
 } from '@mui/material';
 import {
   GitHub,
-  LinkedIn,
   Email,
   Code,
   Work,
-  School,
-  Star,
-  TrendingUp,
-  Psychology,
-  Build
 } from '@mui/icons-material';
+import { About } from './about';
 
 export function HomePage() {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-
-  const skills = [
-    'React', 'TypeScript', 'Node.js', 'Python', 'JavaScript', 'SQL',
-    'AWS', 'Docker', 'Git', 'REST APIs', 'GraphQL', 'MongoDB'
-  ];
 
   const projects = [
     {
@@ -145,50 +129,7 @@ export function HomePage() {
 
       {/* About Section */}
       <Container maxWidth="lg" sx={{ py: 8 }}>
-        <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 6 }}>
-          <Box sx={{ flex: { xs: '1', md: '1' } }}>
-            <Typography variant="h3" component="h2" gutterBottom sx={{ fontWeight: 'bold' }}>
-              About Me
-            </Typography>
-            <Typography variant="body1" paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-              I'm a passionate software developer with 5+ years of experience building modern web applications. 
-              I specialize in full-stack development with a focus on React, Node.js, and cloud technologies.
-            </Typography>
-            <Typography variant="body1" paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-              When I'm not coding, you can find me contributing to open-source projects, 
-              learning new technologies, or sharing knowledge with the developer community.
-            </Typography>
-            <Stack direction="row" spacing={2} sx={{ mt: 3 }}>
-              <IconButton href="https://github.com" target="_blank" sx={{ color: 'primary.main' }}>
-                <GitHub />
-              </IconButton>
-              <IconButton href="https://linkedin.com" target="_blank" sx={{ color: 'primary.main' }}>
-                <LinkedIn />
-              </IconButton>
-              <IconButton href="mailto:hello@example.com" sx={{ color: 'primary.main' }}>
-                <Email />
-              </IconButton>
-            </Stack>
-          </Box>
-          <Box sx={{ flex: { xs: '1', md: '1' } }}>
-            <Paper elevation={3} sx={{ p: 4, height: '100%' }}>
-              <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', mb: 3 }}>
-                Skills & Technologies
-              </Typography>
-              <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
-                {skills.map((skill) => (
-                  <Chip
-                    key={skill}
-                    label={skill}
-                    variant="outlined"
-                    color="primary"
-                    sx={{ mb: 1 }}
-                  />
-                ))}
-              </Box>
-            </Paper>
-          </Box>
-        </Box>
+        <About />
       </Container>
 
       {/* Projects Section */}
