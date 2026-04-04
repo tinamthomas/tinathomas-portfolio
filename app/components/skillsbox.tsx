@@ -9,7 +9,7 @@ interface TagsProps {
 
 export function SkillsBox({ title , children }: TagsProps) {
     return (
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', height: '100%' }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', mb: 3 }}>
                     {title}
                 </Typography>

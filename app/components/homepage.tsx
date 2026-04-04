@@ -128,11 +128,11 @@ export function HomePage() {
       {/* About Section */}
       <Container maxWidth="lg" sx={{ py: 8 }}>
         <About />
-        <Box sx={{ mt: 6, display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 6 }}>
-          <Box sx={{ flex: 1 }}>
+        <Box sx={{ mt: 6, display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 6, alignItems: 'stretch' }}>
+          <Box sx={{ flex: 1, height: '100%' }}>
             <Skills />
           </Box>
-          <Box sx={{ flex: 1 }}>
+          <Box sx={{ flex: 1, height: '100%' }}>
             <Certifications />
           </Box>
         </Box>

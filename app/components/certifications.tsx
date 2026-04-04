@@ -9,8 +9,8 @@ export function Certifications() {
     }, []);
 
     return (
-        <Box sx={{ flex: { xs: '1', md: '1' } }}>
-            <Paper elevation={3} sx={{ p: 4}}>
+        <Box sx={{ flex: { xs: '1', md: '1' }, display: 'flex' }}>
+            <Paper elevation={3} sx={{ p: 4, width: '100%' }}>
                 <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', mb: 3 }}>
                     Certifications
                 </Typography>

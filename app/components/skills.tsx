@@ -11,8 +11,8 @@ const certifications: string[] = [
 
 export function Skills() {
     return (
-        <Box sx={{ flex: { xs: '1', md: '1' } }}>
-            <Paper elevation={3} sx={{ p: 4}}>
+        <Box sx={{ flex: { xs: '1', md: '1', height: '100%' }, display: 'flex' }}>
+            <Paper elevation={3} sx={{ p: 4, width: '100%' }}>
                 <SkillsBox title="Technical Skills">
                     <SkillsView />
                 </SkillsBox>
