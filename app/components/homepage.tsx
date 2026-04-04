@@ -19,6 +19,8 @@ import {
 import { About } from './about';
 import { Experience } from './experience';
 import { Projects } from './projects';
+import { FancySkill } from './fancy-skill';
+import SkillsView from './skills_view';
 
 export function HomePage() {
 
@@ -138,13 +140,13 @@ export function HomePage() {
       <Experience />
       <Projects />
 
-
       {/* Contact Section */}
       <Box sx={{ bgcolor: 'primary.main', color: 'white', py: 8 }}>
         <Container maxWidth="lg">
           <Typography variant="h3" component="h2" gutterBottom sx={{ textAlign: 'center', fontWeight: 'bold', mb: 4 }}>
             Let's Work Together
           </Typography>
+          <SkillsView />
           <Typography variant="h6" sx={{ textAlign: 'center', mb: 4, opacity: 0.9 }}>
             I'm always interested in new opportunities and exciting projects
           </Typography>
