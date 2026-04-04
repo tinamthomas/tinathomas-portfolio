@@ -11,6 +11,9 @@ import {
 import { About } from './about';
 import { Experience } from './experience';
 import { Projects } from './projects';
+// import { Skills } from './skills';
+import { Certifications } from './certifications';
+import { Skills } from './skills';
 
 export function HomePage() {
 
@@ -125,6 +128,14 @@ export function HomePage() {
       {/* About Section */}
       <Container maxWidth="lg" sx={{ py: 8 }}>
         <About />
+        <Box sx={{ mt: 6, display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 6 }}>
+          <Box sx={{ flex: 1 }}>
+            <Skills />
+          </Box>
+          <Box sx={{ flex: 1 }}>
+            <Certifications />
+          </Box>
+        </Box>
       </Container>
 
       <Experience />
