@@ -2,25 +2,15 @@ import {
   Box,
   Container,
   Typography,
-  Button,
-  Card,
-  CardContent,
-  Chip,
-  Avatar,
-  Stack,
-  Paper,
+  Button, Avatar,
+  Stack
 } from '@mui/material';
 import {
-  GitHub,
-  Email,
-  Code,
-  Work,
+  Email, Work
 } from '@mui/icons-material';
 import { About } from './about';
 import { Experience } from './experience';
 import { Projects } from './projects';
-import { FancySkill } from './fancy-skill';
-import SkillsView from './skills_view';
 
 export function HomePage() {
 
@@ -146,7 +136,6 @@ export function HomePage() {
           <Typography variant="h3" component="h2" gutterBottom sx={{ textAlign: 'center', fontWeight: 'bold', mb: 4 }}>
             Let's Work Together
           </Typography>
-          <SkillsView />
           <Typography variant="h6" sx={{ textAlign: 'center', mb: 4, opacity: 0.9 }}>
             I'm always interested in new opportunities and exciting projects
           </Typography>
